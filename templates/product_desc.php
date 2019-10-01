@@ -10,7 +10,7 @@ if (!empty($productHURL)) {
     foreach ($description as $val) {
         array_push($picturesArr, $val['file_name']);
     }
-    
+
     $characteristics = json_decode($description[0]['prod_desc']);
 }
 ?>

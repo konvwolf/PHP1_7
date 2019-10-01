@@ -58,4 +58,5 @@ INSERT INTO products_pics (id, prod_id, file_name, image_name)
     VALUES
         (1, 1, 'tu22m3.jpg', 'Ту-22М3'),
         (2, 2, 'tu95ms.jpg', 'Ту-95МС'),
-        (3, 3, 'tu160m.jpg', 'Ту-160М');
+        (3, 2, 'tu95ms-2.jpg', 'Ту-95МС'),
+        (4, 3, 'tu160m.jpg', 'Ту-160М');
