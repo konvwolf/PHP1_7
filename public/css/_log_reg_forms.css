@@ -1,0 +1,89 @@
+.invisible {
+    display: none;
+}
+
+.reg_log_forms {
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fade-in .2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    z-index: 99;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.login_form,
+.register_form {
+    width: 400px;
+    position: relative;
+    top: 30%;
+    left: calc(50% - 200px);
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.login_form > *,
+.register_form > * {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+button {
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+.btn_cart {
+    width: 150px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.choose_login,
+.choose_register {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.close_window {
+    display: block;
+    width: fit-content;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.error {
+    background-color: indianred;
+    transition: .5s;
+}

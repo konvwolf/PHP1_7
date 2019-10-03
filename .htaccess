@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+DirectoryIndex index.php
+Options +FollowSymlinks
+RewriteRule ^product/(.*)$ /index.php?productHURL=$1 [L]
+RewriteRule ^product /index.php?productHURL=$1 [L]
+RewriteRule ^lk/?$ /index.php?lk=1 [L]
+RewriteRule ^register/?$ /engine/login_register.php [L]
+RewriteRule ^login/?$ /engine/login_register.php [L]
+RewriteRule ^logout/?$ /engine/logout.php [L]
